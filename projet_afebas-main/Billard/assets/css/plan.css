@@ -1,0 +1,162 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/ball.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#topbar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+#topbar .contact-info i {
+  font-size: 16px;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  color: #fff;
+  text-decoration: none;
+}
+
+#topbar .social-links a {
+  color: #fff;
+  padding-left: 15px;
+}
+
+#header {
+  background-color: #000;
+  padding: 15px 0;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  margin: 0 10px;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  color: rgb(165, 17, 17);
+}
+
+#breadcrumbs {
+  background-image: url('../img/ball.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.billiard-room {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.table {
+  text-align: center;
+  perspective: 1000px;
+}
+
+.table img {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s, box-shadow 0.5s, opacity 0.5s;
+  transform-style: preserve-3d;
+  opacity: 0.8;
+}
+
+.table img:hover {
+  transform: rotateY(20deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.table p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#footer .copyright {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#footer .social-links a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+#footer .social-links a:hover {
+  color: #27ae60;
+}
+
+@media (max-width: 1200px) {
+  .billiard-room {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .billiard-room {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .billiard-room {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .billiard-room {
+    grid-template-columns: 1fr;
+  }
+}
